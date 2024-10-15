@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    >
+
+    <Button
+        android:id="@+id/btnExplicitIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explicit Intent"
+        android:fontFamily="@font/serif_regular"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btnImplicitIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Implicit Intent"
+        android:fontFamily="@font/serif_regular"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

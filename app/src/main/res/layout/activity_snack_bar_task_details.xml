@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:text="Welcome To School Of"
+        android:textColor="@color/black"
+        android:fontFamily="@font/serif_regular"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingHorizontal="20dp"
+        />
+    <TextView
+        android:id="@+id/schoolName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="42sp"
+        android:textColor="#EB8321"
+        android:fontFamily="@font/serif_regular"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>
