@@ -9,7 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        startActivity(Intent(this, PortfolioHomeScreen::class.java))
+//        startActivity(Intent(this, PortfolioHomeScreen::class.java))
+        startActivity(Intent(this, ShareQuotes::class.java))
 //        setContentView(R.layout.activity_main)
 //        enableEdgeToEdge()
 //        val pizzaTypeGroup = findViewById<RadioGroup>(R.id.radioGroup)

@@ -23,8 +23,12 @@ class ShareQuotes : AppCompatActivity() {
         val radioButton2 = findViewById<RadioButton>(R.id.radio_quote_2)
         val radioButton3 = findViewById<RadioButton>(R.id.radio_quote_3)
         val radioButton4 = findViewById<RadioButton>(R.id.radio_quote_4)
+        val radioButton5 = findViewById<RadioButton>(R.id.radio_quote_5)
+        val radioButton6 = findViewById<RadioButton>(R.id.radio_quote_6)
+        val radioButton7 = findViewById<RadioButton>(R.id.radio_quote_7)
+        val radioButton8 = findViewById<RadioButton>(R.id.radio_quote_8)
 
-        val radioButtons = arrayOf(radioButton1, radioButton2, radioButton3, radioButton4)
+        val radioButtons = arrayOf(radioButton1, radioButton2, radioButton3, radioButton4, radioButton5, radioButton6, radioButton7, radioButton8)
 
         radioButtons.forEach { radioButton ->
             radioButton.setOnClickListener {
