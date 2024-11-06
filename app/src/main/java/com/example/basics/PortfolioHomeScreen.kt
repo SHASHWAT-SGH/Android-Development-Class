@@ -8,6 +8,7 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.ViewCompat
@@ -87,6 +88,22 @@ class PortfolioHomeScreen : AppCompatActivity() {
             R.id.menu_feedback -> {
                 val intent = Intent(this, PortfolioFeedbackScreen::class.java)
                 startActivity(intent)
+                true
+            }
+
+            R.id.menu_exit -> {
+                val alertBuilder = AlertDialog.Builder(this)
+                alertBuilder.setTitle("Exit")
+                alertBuilder.setMessage("Are you sure you want to exit?")
+                alertBuilder.setCancelable(false)
+                alertBuilder.setPositiveButton("Yes") { _, _ ->
+                    finish()
+                }
+                alertBuilder.setNegativeButton("No") { dialog, _ ->
+                    dialog.cancel()
+                }
+
+                alertBuilder.create().show()
                 true
             }
 
