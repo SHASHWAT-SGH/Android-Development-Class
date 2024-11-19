@@ -4,8 +4,10 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.Button
+import android.widget.PopupMenu
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
@@ -28,13 +30,53 @@ class PortfolioHomeScreen : AppCompatActivity() {
         val btnLinkedin = findViewById<androidx.cardview.widget.CardView>(R.id.btn_linkedin)
 
         btnGithub.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/SHASHWAT-SGH"))
-            startActivity(intent)
+            val p2 = PopupMenu(this, btnGithub)
+            val m1: MenuInflater = p2.menuInflater
+            m1.inflate(R.menu.portfolio_popup_menu, p2.menu)
+
+            p2.setOnMenuItemClickListener { item: MenuItem ->
+                when (item.itemId) {
+                    R.id.portfolio_popup_menu_1 -> {
+                        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/SHASHWAT-SGH"))
+                        startActivity(intent)
+                        true
+                    }
+
+                    R.id.portfolio_popup_menu_2 -> {
+                        false
+                    }
+                    else -> {
+                        false
+                    }
+                }
+            }
+
+            p2.show()
         }
 
         btnLinkedin.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/shashwat11/"))
-            startActivity(intent)
+            val p2 = PopupMenu(this, btnLinkedin)
+            val m1: MenuInflater = p2.menuInflater
+            m1.inflate(R.menu.portfolio_popup_menu, p2.menu)
+
+            p2.setOnMenuItemClickListener { item: MenuItem ->
+                when (item.itemId) {
+                    R.id.portfolio_popup_menu_1 -> {
+                        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/shashwat11/"))
+                        startActivity(intent)
+                        true
+                    }
+
+                    R.id.portfolio_popup_menu_2 -> {
+                        false
+                    }
+                    else -> {
+                        false
+                    }
+                }
+            }
+
+            p2.show()
         }
 
 //        see all

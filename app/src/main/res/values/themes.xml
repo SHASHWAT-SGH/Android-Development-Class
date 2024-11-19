@@ -6,4 +6,8 @@
     </style>
 
     <style name="Theme.Basics" parent="Base.Theme.Basics" />
+    <style name="BottomNavigationViewStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconSize">40dp</item>
+        
+    </style>
 </resources>

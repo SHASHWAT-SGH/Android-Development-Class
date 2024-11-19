@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Basics</string>
     <string name="msg">Empower Education</string>
+    <string name="show_btn">Show</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
